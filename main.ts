@@ -14,16 +14,16 @@ namespace MLX90614 {
     export function mesureTemperature(environment: Environment) {
         switch(environment) {
             case Environment.Ambient:
-                return getTemperature(MLX90614_AMBIENT_REGISTER);
+                return temperature(MLX90614_AMBIENT_REGISTER);
             case Environment.Object:
-                return getTemperature(MLX90614_OBJECT_REGISTER);
+                return temperature(MLX90614_OBJECT_REGISTER);
             default:
                 return 0;
         }
         
     }
 
-    export function getTemperature(register: number) {
+    export function temperature(register: number) {
         return read(register) * 0.02 - 273.15;
     }
 
