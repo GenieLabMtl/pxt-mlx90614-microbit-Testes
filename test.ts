@@ -1,6 +1,1 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showNumber(MLX90614.mesureTemperature(Environment.Ambient))
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showNumber(MLX90614.mesureTemperature(Environment.Object))
-})
+// tests go here; this will not be compiled when this package is used as an extension.
