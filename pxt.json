@@ -1,0 +1,24 @@
+{
+    "name": "mlx90614-microbit",
+    "version": "0.0.0",
+    "description": "Microbit extension for IR-MLX90614 sensor",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "main.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "license": "MIT"
+}
