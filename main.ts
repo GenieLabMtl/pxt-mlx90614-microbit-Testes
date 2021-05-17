@@ -11,7 +11,7 @@ namespace MLX90614 {
     const MLX90614_OBJECT_REGISTER  : number = 0x06;
 
     //% block="mesure temperature  %environment "
-    export function mesureTemperature(environment: Environment) {
+    export function temperature(environment: Environment) {
         switch(environment) {
             case Environment.Ambient:
                 return readTemperature(MLX90614_AMBIENT_REGISTER);
