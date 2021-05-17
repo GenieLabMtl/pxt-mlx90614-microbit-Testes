@@ -4,7 +4,7 @@ enum Environment{
     Object
 }
 
-//% icon = './icon.png'
+//% icon="./icon.png"
 namespace MLX90614 {
 
     const ADDRESS                   : number = 0x5A;
