@@ -8,8 +8,8 @@ enum Environment{
 namespace MLX90614 {
 
     const ADDRESS                   : number = 0x5A;
-    const MLX90614_AMBIENT_REGISTER : number = 0x07;
-    const MLX90614_OBJECT_REGISTER  : number = 0x06;
+    const MLX90614_AMBIENT_REGISTER : number = 0x06;
+    const MLX90614_OBJECT_REGISTER  : number = 0x07;
 
     //% block="mesure temperature  %environment "
     export function temperature(environment: Environment) {
