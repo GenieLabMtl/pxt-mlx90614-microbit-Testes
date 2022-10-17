@@ -25,11 +25,12 @@ namespace MLX90614 {
     }
 
     export function readTemperature(register: number) {
-        return read(register) * 0.02 - 273.15;
+        return read(register) /* 0.02 - 273.15*/;
     }
 
     export function read(register: number) {
         pins.i2cWriteNumber(ADDRESS, register, NumberFormat.UInt8BE, true);
+        basic.pause(10);
         return pins.i2cReadNumber(ADDRESS, NumberFormat.UInt16LE, true);
     }
 }
