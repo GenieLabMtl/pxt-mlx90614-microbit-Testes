@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: |
-          npm install -g pxt
+          npm install pxt
           pxt target 
       - name: Checkout current state
         run: |
