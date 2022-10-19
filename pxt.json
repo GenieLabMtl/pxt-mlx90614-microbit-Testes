@@ -16,9 +16,5 @@
         "test.ts"
     ],
     "public": true,
-    "supportedTargets": [
-        "microbit"
-    ],
-    "preferredEditor": "blocksprj",
-    "license": "MIT"
+ 
 }
