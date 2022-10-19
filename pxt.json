@@ -4,12 +4,10 @@
     "description": "Microbit extension for IR-MLX90614 sensor",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+      
     },
     "files": [
         "README.md",
-        "main.blocks",
         "main.ts"
     ],
     "testFiles": [
