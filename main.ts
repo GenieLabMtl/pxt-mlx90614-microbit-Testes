@@ -25,7 +25,7 @@ namespace MLX90614 {
     }
 
     export function readTemperature(register: number) {
-        return read(register) * 0.02 - 273.15;
+        return read(register);// * 0.02 - 273.15;
     }
 
     export function read(register: number) {
